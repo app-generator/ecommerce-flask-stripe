@@ -17,9 +17,9 @@ import stripe
 
 # Stripe Credentials
 stripe_keys = {
-    "secret_key"      : 'sk_test_51HlWtGGLLd1X07VUIwU3iPZAK9mGdR8GtwSUAAkkyoOl3KpE4BWyIU3BX4mAcofaRrTFQIh4jFPSJHHk1njpwKMC00q3tPjAe7',
-    "publishable_key" : 'pk_test_51HlWtGGLLd1X07VUPujufXrN8JHjn76lzLOZ16zjo895ffZCC4JwcAAipINEC0CVFxjFGmHr1YxRf96JbhPiUeVU00uhxqX2uL',
-    "endpoint_secret" : 'whsec_vmBV9yrHmmBHZwj7kaPZevAZbVQNvJ42'
+    "secret_key": os.environ["STRIPE_SECRET_KEY"],
+    "publishable_key": os.environ["STRIPE_PUBLISHABLE_KEY"],
+    "endpoint_secret": os.environ["STRIPE_ENDPOINT_SECRET"]
 }
 
 stripe.api_key = stripe_keys["secret_key"]
