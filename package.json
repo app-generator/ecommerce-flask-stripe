@@ -1,7 +1,7 @@
 {
     "name": "flask-soft-ui-design-stripe",
     "mastertemplate": "boilerplate-code-jinja",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Template project - Flask/Jinja2 Theme",
     "scripts": {},
     "repository": {
