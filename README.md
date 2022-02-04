@@ -10,7 +10,7 @@ Open-source sample provided by [AppSeed](https://appseed.us). The project is a s
 - Automatic products discovery from `templates` directory 
 - UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - `Deployment`: **Docker**, Gunicorn/Nginx, HEROKU
-- 👉 Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+- 👉 Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup). 
 
 <br />
 
@@ -23,7 +23,7 @@ Open-source sample provided by [AppSeed](https://appseed.us). The project is a s
 
 ## ✨ Quick Start
 
-- Rename & edit `.env.sample`
+- Rename `.env.sample` to `.env`
   - Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
   - Edit `STRIPE_PUBLISHABLE_KEY` - provided by Stripe Platform
 - Install dependencies
