@@ -1,6 +1,6 @@
 # Flask Stripe Sample
 
-Open-source sample provided by AppSeed. The project is a simple eCommerce service that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/flask-soft-ui-design-stripe/tree/master/app/templates/products) directory (no database required). 
+Open-source sample provided by [AppSeed](https://appseed.us). The project is a simple eCommerce service that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/flask-soft-ui-design-stripe/tree/master/app/templates/products) directory (no database required). 
 
 <br />
 
