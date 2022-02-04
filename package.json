@@ -1,15 +1,15 @@
 {
-    "name": "jinja-soft-ui-free",
+    "name": "flask-soft-ui-design-stripe",
     "mastertemplate": "boilerplate-code-jinja",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "description": "Template project - Flask/Jinja2 Theme",
     "scripts": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/app-generator/jinja-soft-ui-free"
+        "url": "https://github.com/app-generator/flask-soft-ui-design-stripe"
     },
     "bugs": {
-        "url": "https://github.com/app-generator/jinja-soft-ui-free/issues",
+        "url": "https://github.com/app-generator/flask-soft-ui-design-stripe/issues",
         "email": "support@appseed.us"
     },
     "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
