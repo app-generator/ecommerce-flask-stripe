@@ -10,18 +10,18 @@ Open-source sample provided by AppSeed. The project is a simple eCommerce servic
 - Automatic products discovery from `templates` directory 
 - UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - `Deployment`: **Docker**, Gunicorn/Nginx, HEROKU
-- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+- 👉 Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
 > Links:
 
-- [Flask Stripe Sample](#) - LIVE Demo (coming soon)
-- More products built with [Soft UI Design](https://appseed.us/ui-kit/soft-ui-design-system) - provided by AppSeed
+- 👉 [Flask Stripe Sample](#) - LIVE Demo (coming soon)
+- 👉 More products built with [Soft UI Design](https://appseed.us/ui-kit/soft-ui-design-system) - provided by AppSeed
 
 <br />
 
-## Quick Start
+## ✨ Quick Start
 
 - Rename & edit `.env.sample`
   - Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
@@ -41,7 +41,7 @@ Open-source sample provided by AppSeed. The project is a simple eCommerce servic
 
 <br />
 
-## Build from sources
+## ✨ Build from sources
 
 ```bash
 $ # Clone the sources
@@ -79,7 +79,7 @@ $ # Access the UI in browser: http://127.0.0.1:5000/
 
 <br />
 
-## Create a new Product
+## ✨ Create a new Product
 
 - Go to `app/templates/products` directory
 - Create a new `JSON` file with data:
@@ -105,11 +105,11 @@ $ # Access the UI in browser: http://127.0.0.1:5000/
 
 <br />
 
-![Flask Stripe Sample - Air ZOOM Pegasus (sample Product).](https://user-images.githubusercontent.com/51070104/152586841-344912a3-ed29-4c88-b9b2-3fe66f4702e9.png)
+![Flask Stripe Sample - Air ZOOM Pegasus (sample Product](https://user-images.githubusercontent.com/51070104/152586940-2f3b31fb-f067-487a-98ca-26d9e1936514.png)
 
 <br />
 
-## Code-base structure
+## ✨ Code-base structure
 
 The project has a simple structure, represented as bellow:
 
@@ -151,7 +151,7 @@ The project has a simple structure, represented as bellow:
 
 <br />
 
-## Deployment
+## ✨ Deployment
 
 The project comes with a basic configuration for [Docker](https://www.docker.com/), [HEROKU](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
 
@@ -232,15 +232,7 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 
 <br />
 
-## [Soft UI Design System](https://appseed.us/ui-kit/soft-ui-design-system) - UI Kit
-
-Most complex and innovative Design System Made by Creative Tim. Soft UI Design System is built with over 70 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files and classes.
-
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Free Bootstrap 5 UK Kit is coming with prebuilt design blocks, so the development process is seamless, switching from our pages to the real website is very easy to be done.
-
-<br />
-
-## Credits & Links
+## ✨ Credits & Links
 
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - The official website
 
