@@ -1,30 +1,39 @@
-# [Soft UI](https://appseed.us/ui-kit/soft-ui-design-system) Jinja
+# Flask Stripe Sample
 
-Open-source **Jinja Template** provided by AppSeed on top of **[Soft UI](https://appseed.us/ui-kit/soft-ui-design-system)** Kit, a modern Bootstrap 5 design from Creative-Tim. The project might help beginners to code `simple presentation websites` on top of the existing codebase OR migrate the `production-ready` UI to a legacy Python-based project compatible with **Jinja Template Engine**: *Flask*, *Django*, *Bottle* of *FastAPI*. 
+Open-source sample provided by AppSeed. The project is a simple eCommerce service that loads the products from `JSON` files (no database required). 
 
 <br />
 
 > Features:
 
+- Payments via `Stripe`
+- Automatic products discovery from `templates` directory 
 - UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
-- Render Engine: Flask / Jinja2
-- Deployment scripts: Docker, Gunicorn/Nginx, HEROKU
+- `Deployment`: **Docker**, Gunicorn/Nginx, HEROKU
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
 > Links:
 
-- [Soft UI Kit Jinja](https://jinja-soft-ui-free.appseed-srv1.com) - LIVE Demo
+- [Flask Stripe Sample](#) - LIVE Demo (coming soon)
 - More products built with [Soft UI Design](https://appseed.us/ui-kit/soft-ui-design-system) - provided by AppSeed
 
 <br />
 
-## [Soft UI](https://appseed.us/ui-kit/soft-ui-design-system)
+## Quick Start
 
-Most complex and innovative Dashboard Made by Creative Tim: made of hundred of elements, designed blocks and fully coded pages, Soft UI Dashboard is ready to help you create stunning websites and webapps. 
-
-Premium **Bootstrap 5 Design System** built by Creative-Tim - Soft UI Design System is built with over 300 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files and classes.
+- Rename & edit `.env.sample`
+  - Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
+  - Edit `STRIPE_PUBLISHABLE_KEY` - provided by Stripe Platform
+- Install dependencies
+- Start the App
+  - `$ flask run` 
+- Access the products and initiate a payment
+  - **IMPORTANT**: Make sure your Stripe account running in TEST Mode
+  - Use Test CC data:
+    - CC Number: `4242 4242 4242 4242`
+    - Any data for the rest of the fields  
 
 <br />
 
@@ -115,30 +124,6 @@ The project has a simple structure, represented as bellow:
 ## Deployment
 
 The project comes with a basic configuration for [Docker](https://www.docker.com/), [HEROKU](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
-
-<br />
-
-### [Docker](https://www.docker.com/) execution
----
-
-The steps to start the template using Docker:
-
-> Get the code
-
-```bash
-$ git clone https://github.com/app-generator/jinja-soft-ui-free.git
-$ cd jinja-soft-ui-free
-```
-
-> Start the app in Docker
-
-```bash
-$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
-```
-
-Visit `http://localhost:5005` in your browser. The app should be up & running.
-
-<br />
 
 ### [Heroku](https://www.heroku.com/)
 ---
