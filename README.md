@@ -1,6 +1,6 @@
 # Flask Stripe Sample
 
-Open-source sample provided by AppSeed. The project is a simple eCommerce service that loads the products from `JSON` files (no database required). 
+Open-source sample provided by AppSeed. The project is a simple eCommerce service that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/flask-soft-ui-design-stripe/tree/master/app/templates/products) directory (no database required). 
 
 <br />
 
@@ -37,7 +37,7 @@ Open-source sample provided by AppSeed. The project is a simple eCommerce servic
 
 <br />
 
-![Jinja Template - Starter provided by AppSeed.](https://raw.githubusercontent.com/app-generator/jinja-soft-ui-free/master/media/jinja-soft-ui-free-screen-contact.png)
+![Flask Stripe Sample - Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/152585155-de1dbd89-e2ce-47af-a5ac-a19e9b1531bc.png)
 
 <br />
 
@@ -76,6 +76,36 @@ $ flask run --host=0.0.0.0 --port=5000
 $
 $ # Access the UI in browser: http://127.0.0.1:5000/
 ```
+
+<br />
+
+## Create a new Product
+
+- Go to `app/templates/products` directory
+- Create a new `JSON` file with data:
+  - name: Used in product page & Cards
+  - price: Used for payment
+  - currency: Used for payment
+  - info: used in cards 
+  - short_description: used in product page
+  - full_description: used in product page
+- Create Media Files
+  - Go to `master/app/static/products` 
+  - Create a directory using the same name as for `JSON` file
+    - Create `card.jpg`: 500x335px
+    - Create `cover.jpg`: 2100x1400px
+- Start or refresh the app
+  - The new product should be listed in the `products/` page
+  - Product page is available at address:
+    - `http://localhost:5000/products/<SLUG>/` where the SLUG is the name of the JSON file 
+  
+<br />
+
+> Sample product page generated for [Air ZOOM Pegasus](https://github.com/app-generator/flask-soft-ui-design-stripe/blob/master/app/templates/products/product-air-zoom-pegasus.json), assets loaded from [here](https://github.com/app-generator/flask-soft-ui-design-stripe/tree/master/app/static/products/product-air-zoom-pegasus)
+
+<br />
+
+![Flask Stripe Sample - Air ZOOM Pegasus (sample Product).](https://user-images.githubusercontent.com/51070104/152586841-344912a3-ed29-4c88-b9b2-3fe66f4702e9.png)
 
 <br />
 
