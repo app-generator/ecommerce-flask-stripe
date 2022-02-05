@@ -21,6 +21,10 @@ Open-source sample provided by [AppSeed](https://appseed.us). The project is a s
 
 <br />
 
+![Flask Stripe Sample - Open-Source project crafted by AppSeed (GIF animated presentation).](https://user-images.githubusercontent.com/51070104/152642786-d584d817-691e-4079-8663-3c212ef6328a.gif)
+
+<br />
+
 ## ✨ Quick Start
 
 - Rename `.env.sample` to `.env`
@@ -34,10 +38,6 @@ Open-source sample provided by [AppSeed](https://appseed.us). The project is a s
   - Use Test CC data:
     - CC Number: `4242 4242 4242 4242`
     - Any data for the rest of the fields  
-
-<br />
-
-![Flask Stripe Sample - Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/152585155-de1dbd89-e2ce-47af-a5ac-a19e9b1531bc.png)
 
 <br />
 
