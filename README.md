@@ -45,8 +45,8 @@ Open-source sample provided by [AppSeed](https://appseed.us). The project is a s
 
 ```bash
 $ # Clone the sources
-$ git clone https://github.com/app-generator/jinja-soft-ui-free.git
-$ cd jinja-soft-ui-free
+$ git clone https://github.com/app-generator/sample-flask-stripe.git
+$ cd jsample-flask-stripe
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -83,12 +83,12 @@ $ # Access the UI in browser: http://127.0.0.1:5000/
 
 - Go to `app/templates/products` directory
 - Create a new `JSON` file with data:
-  - name: Used in product page & Cards
-  - price: Used for payment
-  - currency: Used for payment
-  - info: used in cards 
-  - short_description: used in product page
-  - full_description: used in product page
+  - `name`: Used in product page & Cards
+  - `price`: Used for payment
+  - `currency`: Used for payment
+  - `info`: used in cards 
+  - `short_description`: used in product page
+  - `full_description`: used in product page
 - Create Media Files
   - Go to `master/app/static/products` 
   - Create a directory using the same name as for `JSON` file
