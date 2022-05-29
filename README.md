@@ -167,8 +167,8 @@ Steps to deploy on **Heroku**
 
 ```bash
 $ # Clone the source code:
-$ git clone https://github.com/app-generator/jinja-soft-ui-free.git
-$ cd jinja-soft-ui-free
+$ git clone https://github.com/app-generator/sample-flask-stripe.git
+$ cd sample-flask-stripe
 $
 $ # Check Heroku CLI is installed
 $ heroku -v
