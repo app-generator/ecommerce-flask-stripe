@@ -29,7 +29,6 @@ https://user-images.githubusercontent.com/51070104/193888196-bfb20cd1-7248-4a42-
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
 
 ```bash
-$ # Get the code
 $ git clone https://github.com/app-generator/sample-flask-stripe.git
 $ cd sample-flask-stripe
 ```
