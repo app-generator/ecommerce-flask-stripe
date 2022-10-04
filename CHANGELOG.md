@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.0.0] 2022-10-10
+## Fixes & Evolutions
+
+- `Production-ready`
+- Code refactoring
+- Warns users if the App is not configured properly
+  - STRIPE secrets not provided  
+- Deployment
+  - `Docker` scripts fixed
+  - Page Compression via `Flask-Minify`
+
 ## [0.0.2] 2022-02-04
 ## Minor Changes
 
