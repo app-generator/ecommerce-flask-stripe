@@ -30,9 +30,23 @@
             
             <!-- used to trigger the right product -->
             <span style="display:none" id="product_slug">{{ product.slug }}</span>
-            <a id="submitBtn" href="#" class="btn bg-white text-dark">
-              Buy Product - ${{ product.price }}
-            </a>
+            
+
+            {% if config.STRIPE_IS_ACTIVE %}
+
+              <a id="submitBtn" href="#" class="btn bg-white text-dark">
+                Buy Product - ${{ product.price }}
+              </a>
+
+            {% else %}
+
+              <button type="button" class="btn bg-white text-dark" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#stripeModal">
+                Buy Product - ${{ product.price }}
+              </button>
+
+            {% endif %}
 
             <h6 class="text-white mb-2 mt-5">
               Chat with Support
@@ -131,6 +145,8 @@
     </div>
   </section>
   <!-- END Section with four info areas left & one card right with image and waves -->
+
+  {% include "ecommerce/modal-warning.html" %}
 
 {% endblock content %}
 
