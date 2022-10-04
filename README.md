@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/51070104/193888196-bfb20cd1-7248-4a42-
 
 ## ✨ Start the app in Docker
 
-> **Step 1** - Download the code from the GH repository (using `GIT`) 
+> 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
 
 ```bash
 $ # Get the code
@@ -36,18 +36,17 @@ $ cd sample-flask-stripe
 
 <br />
 
-> **Step 2** - Add STRIPE secrets in `Dockerfile`
+> 👉 **Step 2** - Add STRIPE secrets in `Dockerfile`
 
 ```Dokerfile
 # Stripe Secrets 
 ENV STRIPE_SECRET_KEY      <YOUR_STRIPE_SECRET_KEY>
 ENV STRIPE_PUBLISHABLE_KEY <YOUR_STRIPE_PUBLISHABLE_KEY>
-
 ```
 
 <br />
 
-> **Step 3** - Start the APP in `Docker`
+> 👉 **Step 3** - Start the APP in `Docker`
 
 ```bash
 $ docker-compose up --build 
