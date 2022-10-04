@@ -24,6 +24,39 @@ Open-source simple `eCommerce` project that loads the products from `JSON` files
 
 <br />
 
+## ✨ Start the app in Docker
+
+> **Step 1** - Download the code from the GH repository (using `GIT`) 
+
+```bash
+$ # Get the code
+$ git clone https://github.com/app-generator/sample-flask-stripe.git
+$ cd sample-flask-stripe
+```
+
+<br />
+
+> **Step 2** - Add STRIPE secrets in `Dockerfile`
+
+```Dokerfile
+# Stripe Secrets 
+ENV STRIPE_SECRET_KEY      <YOUR_STRIPE_SECRET_KEY>
+ENV STRIPE_PUBLISHABLE_KEY <YOUR_STRIPE_PUBLISHABLE_KEY>
+
+```
+
+<br />
+
+> **Step 3** - Start the APP in `Docker`
+
+```bash
+$ docker-compose up --build 
+```
+
+Visit `http://localhost:5085` in your browser. The app should be up & running.
+
+<br />
+
 ## ✨ Quick Start
 
 - Rename `env.sample` to `.env`
