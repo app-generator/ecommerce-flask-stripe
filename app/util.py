@@ -3,7 +3,6 @@
 Copyright (c) 2019 - present AppSeed.us
 """
 
-from msilib.schema import Class
 import os, fnmatch, json
 from app import app 
 

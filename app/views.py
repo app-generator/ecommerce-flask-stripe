@@ -17,9 +17,9 @@ import stripe
 
 # Stripe Credentials
 stripe_keys = {
-    "secret_key": os.environ["STRIPE_SECRET_KEY"],
-    "publishable_key": os.environ["STRIPE_PUBLISHABLE_KEY"],
-    "endpoint_secret": os.environ["STRIPE_ENDPOINT_SECRET"]
+    "secret_key"     : app.config['STRIPE_SECRET_KEY'     ] ,
+    "publishable_key": app.config['STRIPE_PUBLISHABLE_KEY'] ,
+    "endpoint_secret": app.config['STRIPE_SECRET_KEY'     ] ,
 }
 
 stripe.api_key = stripe_keys["secret_key"]
@@ -31,18 +31,18 @@ def get_publishable_key():
 
 @app.route("/success")
 def success():
-    return render_template("payment-success.html")
+    return render_template("ecommerce/payment-success.html")
 
 @app.route("/cancelled")
 def cancelled():
-    return render_template("payment-cancelled.html")
+    return render_template("ecommerce/payment-cancelled.html")
 
 @app.route("/create-checkout-session/<path>/")
 def create_checkout_session(path):
 
     product = load_product_by_slug( path )
 
-    domain_url = "http://localhost:5000/"
+    domain_url = app.config['SERVER_ADDRESS']
     stripe.api_key = stripe_keys["secret_key"]
 
     try:
@@ -74,7 +74,8 @@ def create_checkout_session(path):
         return jsonify(error=str(e)), 403
 
 # Product Index
-@app.route('/products/', defaults={'path': 'index.html'})
+@app.route('/',          defaults={'path': 'products/index.html'})
+@app.route('/products/', defaults={'path': 'products/index.html'})
 def products_index(path):
 
     # Collect Products
@@ -95,7 +96,9 @@ def products_index(path):
             products.append( product )
 
     # Render Products Page
-    return render_template( 'products/index.html', products=products, featured_product=load_product_by_slug('featured') )
+    return render_template( 'ecommerce/index.html', 
+                            products=products, 
+                            featured_product=load_product_by_slug('featured') )
 
 # List Product
 @app.route('/products/<path>/')
@@ -103,35 +106,16 @@ def product_info(path):
 
     product = load_product_by_slug( path )
 
-    return render_template( 'products/template.html', product=product )
-
+    return render_template( 'ecommerce/template.html', product=product )
 
 # App main route + generic routing
-@app.route('/', defaults={'path': 'index.html'})
 @app.route('/<path>')
 def index(path):
 
     try:
 
-        # Detect the current page
-        segment = get_segment( request )
-
         # Serve the file (if exists) from app/templates/FILE.html
-        return render_template( path, segment=segment )
+        return render_template( 'pages/' + path )
     
     except TemplateNotFound:
-        return render_template('page-404.html'), 404
-
-def get_segment( request ): 
-
-    try:
-
-        segment = request.path.split('/')[-1]
-
-        if segment == '':
-            segment = 'index'
-
-        return segment    
-
-    except:
-        return None  
+        return render_template('pages/page-404.html'), 404
