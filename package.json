@@ -6,10 +6,10 @@
     "scripts": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/app-generator/flask-soft-ui-design-stripe"
+        "url": "https://github.com/app-generator/sample-flask-stripe"
     },
     "bugs": {
-        "url": "https://github.com/app-generator/flask-soft-ui-design-stripe/issues",
+        "url": "https://github.com/app-generator/sample-flask-stripe/issues",
         "email": "support@appseed.us"
     },
     "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
