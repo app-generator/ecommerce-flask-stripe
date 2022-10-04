@@ -1,6 +1,6 @@
 # Flask Stripe Sample
 
-Open-source simple `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) - Powered by **Flask**.
+Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
 <br />
 
@@ -20,7 +20,7 @@ Open-source simple `eCommerce` project that loads the products from `JSON` files
 
 <br />
 
-![Flask Stripe Sample - Open-Source project crafted by AppSeed (GIF animated presentation).](https://user-images.githubusercontent.com/51070104/152642786-d584d817-691e-4079-8663-3c212ef6328a.gif)
+https://user-images.githubusercontent.com/51070104/193888196-bfb20cd1-7248-4a42-ba97-6d67f14c5e40.mp4
 
 <br />
 
