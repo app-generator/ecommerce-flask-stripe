@@ -11,7 +11,7 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 - ✅ Powered by `Flask` & `Stripe`
 - ✅ NO database, NO authentication
-- ✅ Automatic products discovery from `templates\products` directory 
+- ✅ Automatic Products discovery from [templates\products](./app/templates/products) directory 
   - [JSON Format](https://github.com/app-generator/sample-flask-stripe/blob/master/app/templates/products/product-air-zoom-pegasus.json) (sample) 
 - ✅ UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - ✅ `Deployment`: **Docker**
