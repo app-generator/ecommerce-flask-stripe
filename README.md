@@ -60,7 +60,7 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 - Start the App
   - `$ flask run` 
 - Access the products and initiate a payment
-  - **IMPORTANT**: Make sure your Stripe account running in TEST Mode
+  - **IMPORTANT**: Make sure your Stripe account is running in `TEST Mode`
   - Use Test CC data:
     - CC Number: `4242 4242 4242 4242`
     - Any data for the rest of the fields  
@@ -83,7 +83,7 @@ $ # virtualenv env
 $ # .\env\Scripts\activate
 $
 $ # Install requirements
-$ pip3 install -r requirements.txt
+$ pip install -r requirements.txt
 $
 $ # Set the FLASK_APP environment variable
 $ (Unix/Mac) export FLASK_APP=run.py
