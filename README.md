@@ -54,55 +54,37 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 ## ✨ Quick Start
 
-- Rename `env.sample` to `.env`
-  - Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
-  - Edit `STRIPE_PUBLISHABLE_KEY` - provided by Stripe Platform
-- Install dependencies
-- Start the App
-  - `$ flask run` 
-- Access the products and initiate a payment
-  - **IMPORTANT**: Make sure your Stripe account is running in `TEST Mode`
-  - Use Test CC data:
-    - CC Number: `4242 4242 4242 4242`
-    - Any data for the rest of the fields  
+> 👉 Rename `env.sample` to `.env`
+
+- Edit `STRIPE_SECRET_KEY` - provided by Stripe Platform
+- Edit `STRIPE_PUBLISHABLE_KEY` - provided by Stripe Platform
 
 <br />
 
-## ✨ Build from sources
+> 👉 Install dependencies
 
 ```bash
-$ # Clone the sources
-$ git clone https://github.com/app-generator/sample-flask-stripe.git
-$ cd sample-flask-stripe
-$
-$ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
 $ source env/bin/activate
-$
-$ # Virtualenv modules installation (Windows based systems)
-$ # virtualenv env
-$ # .\env\Scripts\activate
-$
-$ # Install requirements
 $ pip install -r requirements.txt
-$
-$ # Set the FLASK_APP environment variable
-$ (Unix/Mac) export FLASK_APP=run.py
-$ (Windows) set FLASK_APP=run.py
-$ (Powershell) $env:FLASK_APP = ".\run.py"
-$
-$ # Set up the DEBUG environment
-$ # (Unix/Mac) export FLASK_ENV=development
-$ # (Windows) set FLASK_ENV=development
-$ # (Powershell) $env:FLASK_ENV = "development"
-$
-$ # Run the Jinja Template
-$ # --host=0.0.0.0 - expose the app on all network interfaces (default 127.0.0.1)
-$ # --port=5000    - specify the app port (default 5000)  
-$ flask run --host=0.0.0.0 --port=5000
-$
-$ # Access the UI in browser: http://127.0.0.1:5000/
 ```
+
+<br />
+
+> 👉 Start the App
+
+```bash
+$ flask run
+```
+
+<br />
+
+> 👉 Access the products and initiate a payment
+
+**IMPORTANT**: Make sure your Stripe account is running in `TEST Mode` and Use Test CC provided by Stripe:
+
+- **CC Number**: `4242 4242 4242 4242`
+- Any data for the rest of the fields  
 
 <br />
 
