@@ -9,11 +9,11 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 > Features:
 
-- Payments via **Stripe**
-- Powered by **Flask**
-- Automatic products discovery from `templates\products` directory 
-- UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
-- `Deployment`: **Docker**
+- ✅ Payments via **Stripe**
+- ✅ Powered by **Flask**
+- ✅ Automatic products discovery from `templates\products` directory 
+- ✅ UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
+- ✅ `Deployment`: **Docker**
 
 <br />
 
