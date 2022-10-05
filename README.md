@@ -12,7 +12,7 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 - ✅ Powered by `Flask` & `Stripe`
 - ✅ NO database, NO authentication
 - ✅ Automatic Products discovery from [templates\products](./app/templates/products) directory 
-  - [JSON Format](https://github.com/app-generator/sample-flask-stripe/blob/master/app/templates/products/product-air-zoom-pegasus.json) (sample) 
+  - [JSON Format](./app/templates/products/product-air-zoom-pegasus.json) (sample) 
 - ✅ UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - ✅ `Deployment`: **Docker**
 - ✅ Pages Compression via `Flask-Minify`
@@ -112,7 +112,7 @@ $ flask run
   
 <br />
 
-> Sample product page generated for [Air ZOOM Pegasus](https://github.com/app-generator/sample-flask-stripe/blob/master/app/templates/products/product-air-zoom-pegasus.json), assets loaded from [here](https://github.com/app-generator/sample-flask-stripe/tree/master/app/static/products/product-air-zoom-pegasus)
+> Sample product page generated for [Air ZOOM Pegasus](./app/templates/products/product-air-zoom-pegasus.json), assets loaded from [here](./app/static/products/product-air-zoom-pegasus)
 
 <br />
 
@@ -120,7 +120,7 @@ $ flask run
 
 <br />
 
-## ✨ Code-base structure
+## ✨ Codebase structure
 
 The project has a simple structure, represented as bellow:
 
