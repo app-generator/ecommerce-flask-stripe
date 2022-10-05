@@ -2,14 +2,15 @@
 
 Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
-- [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
-- 👉 Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup). 
+- 👉 [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
+- 👉 Free [Support](https://appseed.us/) via `Github` (issues tracker) and `Discord`. 
 
 <br />
 
 > Features:
 
-- Payments via `Stripe`
+- Payments via **Stripe**
+- Powered by **Flask**
 - Automatic products discovery from `templates\products` directory 
 - UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - `Deployment`: **Docker**
@@ -20,7 +21,7 @@ https://user-images.githubusercontent.com/51070104/193888196-bfb20cd1-7248-4a42-
 
 <br />
 
-## ✨ Start the app in Docker
+## ✨ Start the app in `Docker`
 
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
 
@@ -179,4 +180,4 @@ The project has a simple structure, represented as bellow:
 <br />
 
 ---
-[Soft UI](https://appseed.us/ui-kit/soft-ui-design-system) Jinja - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+[Flask Stripe Sample](https://www.youtube.com/watch?v=JDtigUqW_MM) - Free sample provided by [AppSeed](https://appseed.us).
