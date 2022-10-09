@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.1] 2022-10-09
+## Evolutions
+
+- Added Build Script for Render
+  - CI/CD flow
+
 ## [1.0.0] 2022-10-10
 ## Fixes & Evolutions
 
