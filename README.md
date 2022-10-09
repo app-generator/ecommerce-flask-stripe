@@ -3,6 +3,7 @@
 Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
 - 👉 [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
+- 👉 [Deploy Flask on Render](https://docs.appseed.us/deployment/render/flask) - learn how to deploy this project on **Render**
 - 👉 Free [Support](https://appseed.us/) via `Github` (issues tracker) and `Discord`. 
 
 <br />
