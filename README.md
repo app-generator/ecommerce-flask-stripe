@@ -1,4 +1,4 @@
-# [Flask & Stripe](https://www.youtube.com/watch?v=JDtigUqW_MM) `Mini eCommerce`
+# [Flask & Stripe](https://blog.appseed.us/flask-stripe-open-source-mini-ecommerce/) `Mini eCommerce`
 
 Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
@@ -165,4 +165,4 @@ The project has a simple structure, represented as bellow:
 <br />
 
 ---
-[Flask Stripe Sample](https://www.youtube.com/watch?v=JDtigUqW_MM) - Free sample provided by [AppSeed](https://appseed.us).
+[Flask Stripe Sample](https://blog.appseed.us/flask-stripe-open-source-mini-ecommerce/) - Free sample provided by [AppSeed](https://appseed.us).
