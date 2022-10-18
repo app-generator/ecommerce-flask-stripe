@@ -10,11 +10,11 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 > Features:
 
+- ✅ **[Soft UI Design](https://www.creative-tim.com/product/soft-ui-design-system?AFFILIATE=128200)** (Free Version) by `Creative-Tim`
 - ✅ Powered by `Flask` & `Stripe`
 - ✅ NO database, NO authentication
 - ✅ Automatic Products discovery from [templates\products](./app/templates/products) directory 
   - [JSON Format](./app/templates/products/product-air-zoom-pegasus.json) (sample) 
-- ✅ UI Kit: **Soft UI Kit** (Free Version) by **Creative-Tim**
 - ✅ `Deployment`: **Docker**
 - ✅ Pages Compression via `Flask-Minify`
 
