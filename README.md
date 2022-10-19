@@ -1,6 +1,6 @@
 # [Flask & Stripe](https://blog.appseed.us/flask-stripe-open-source-mini-ecommerce/) `Mini eCommerce`
 
-Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the [templates](https://github.com/app-generator/sample-flask-stripe/tree/master/app/templates/products) directory (no database required) and uses a decent UI for page styling - Powered by **Flask**.
+Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
 - 👉 [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
 - 👉 [Deploy Flask on Render](https://docs.appseed.us/deployment/render/flask) - `Step-by-step` tutorial
@@ -8,15 +8,18 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 <br />
 
-> Features:
+> Roadmap & Features 
 
-- ✅ **[Soft UI Design](https://www.creative-tim.com/product/soft-ui-design-system?AFFILIATE=128200)** (Free Version) by `Creative-Tim`
-- ✅ Powered by `Flask` & `Stripe`
-- ✅ NO database, NO authentication
-- ✅ Automatic Products discovery from [templates\products](./app/templates/products) directory 
-  - [JSON Format](./app/templates/products/product-air-zoom-pegasus.json) (sample) 
-- ✅ `Deployment`: **Docker**
-- ✅ Pages Compression via `Flask-Minify`
+| Status | Item | info | 
+| --- | --- | --- |
+| ✅ | **Flask** | For `backend logic` |
+| ✅ | **Stripe** | `Payment processor` |
+| ✅ | **[Soft UI Design](https://www.creative-tim.com/product/soft-ui-design-system?AFFILIATE=128200)** | (Free Version) by `Creative-Tim` |
+| ✅ | **JSON** | `Products definition` - see [sample](./app/templates/products/product-air-zoom-pegasus.json) |
+| ✅ | Automatic Products Discovery | Source DIR: [templates\products](./app/templates/products) |
+| ❌ | **Deployment** | `Docker` & Pages Compression |
+| ❌ | **Dw Products from Stripe** | On going development via [Python Stripe Library](https://pypi.org/project/python-stripe/) |
+| ❌ | **CI/CD** | Render Deployment Platform |
 
 <br />
 
