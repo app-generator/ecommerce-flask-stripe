@@ -717,9 +717,15 @@
               <p class="d-inline text-sm z-index-1 font-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Source Code">Download</p>
             </a>
           </li>
-          <li class="nav-item my-auto ms-3 ms-lg-0">
-            <a href="https://appseed.us" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
-          </li>
+          {% if current_user.is_authenticated %}
+            <li class="nav-item my-auto ms-3 ms-lg-0">
+              <a href="{{ url_for('logout') }}" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Logout</a>
+            </li>            
+          {% else %}
+            <li class="nav-item my-auto ms-3 ms-lg-0">
+              <a href="https://appseed.us" class="btn btn-sm  bg-white  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </div>
