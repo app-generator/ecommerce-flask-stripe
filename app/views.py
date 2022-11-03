@@ -32,6 +32,41 @@ stripe_keys = {
 
 stripe.api_key = stripe_keys["secret_key"]
 
+###############################################
+# AUTH 
+
+@app.route('/login/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+
+        user = User(username=username, password=password)
+        login_user(user=user, remember=True)
+        return redirect('/')
+
+
+    return render_template("pages/page-sign-in.html")
+
+@app.route('/logout/', methods=['GET'])
+def logout():
+    logout_user()
+    return redirect('/')
+
+@app.cli.command("create-user")
+def create_user():
+    username = input("Username: ")
+    email = input("Email: ")
+    password = input("Password: ")
+
+    user = User(username=username, email=email, password=password)
+    db.create_all()
+    db.session.add(user)
+    db.session.commit()
+
+# AUTH 
+###############################################
+
 @app.route("/config")
 def get_publishable_key():
     stripe_config = {"publicKey": stripe_keys["publishable_key"]}
@@ -299,29 +334,7 @@ def delete_product(path):
         return redirect('/load-products')  
 
 
-@app.route('/login/', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
 
-        user = User(username=username, password=password)
-        login_user(user=user, remember=True)
-        return redirect('/')
-
-
-    return render_template("pages/page-sign-in.html")
-
-@app.cli.command("create-user")
-def create_user():
-    username = input("Username: ")
-    email = input("Email: ")
-    password = input("Password: ")
-
-    user = User(username=username, email=email, password=password)
-    db.create_all()
-    db.session.add(user)
-    db.session.commit()
 
 # Custom Filter
 @app.template_filter('product_name')
