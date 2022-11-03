@@ -28,14 +28,7 @@ stripe_keys = {
     "secret_key"     : app.config['STRIPE_SECRET_KEY'     ] ,
     "publishable_key": app.config['STRIPE_PUBLISHABLE_KEY'] ,
     "endpoint_secret": app.config['STRIPE_SECRET_KEY'     ] ,
-}
-
-
-
-# con = sqlite3.connect('users.db')
-# c = con.cursor()
-# c.execute("CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, email TEXT, password TEXT)")
-# con.close()
+} 
 
 stripe.api_key = stripe_keys["secret_key"]
 
