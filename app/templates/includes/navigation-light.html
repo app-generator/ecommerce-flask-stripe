@@ -41,11 +41,13 @@
                   </div>
                   Samples
                 </h6>
+                {% if current_user.is_authenticated %}
+                <a href="{{ url_for('load_product_json') }}" class="dropdown-item border-radius-md">
+                  Edit Products
+                </a>
+                {% endif %}
                 <a href="{{ url_for('products_index') }}" class="dropdown-item border-radius-md">
                   All Products
-                </a>
-                <a href="{{ url_for('products_index') }}/product-air-zoom-pegasus" class="dropdown-item border-radius-md">
-                  Nike Air Zoom
                 </a>
               </div>
               <div class="d-lg-none">
@@ -101,7 +103,7 @@
                   </div>
                   Account
                 </h6>
-                <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                   Sign In
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
@@ -174,7 +176,7 @@
                   </div>
                   Account
                 </h6>
-                <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                   Sign In
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
@@ -234,7 +236,7 @@
                   </div>
                   Account
                 </h6>
-                <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                   Sign In
                 </a>
                 <a href="/page-sign-up.html" class="dropdown-item border-radius-md">

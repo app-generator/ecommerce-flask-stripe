@@ -7,13 +7,18 @@ import os, fnmatch, json
 from app import app 
 
 class Product:
+    id       = ''
     name     = ''
     price    = 0
     currency = ''
     info     = ''
-    short_description = ''
     full_description = ''
     slug     = '' 
+    img_main   = ''
+    img_card = ''
+    img_1 = ''
+    img_2 = ''
+    img_3 = ''
 
 def get_templates_dir():
     return os.path.join(app.root_path, 'templates' )
@@ -50,28 +55,44 @@ def get_slug( aPath, aExt='json' ):
 
     return None
 
-def load_product( aJSONPath ): 
-
+def load_json_product( aJSONPath ): 
     f = open(aJSONPath, 'r')
-
     if not f:
-        return None
-        
+        return None   
+    
     # Read Product Info    
     data = json.load( f )
 
+    return data
+
+def load_product( aJSONPath ): 
+    f = open(aJSONPath, 'r')
+    if not f:
+        return None   
+    
+    # Read Product Info    
+    data = json.load( f )
+    
     if not data:
         return None 
-
+    
     product = Product()
 
     product.name  = data["name"] 
     product.info  = data["info"]
-    product.price = int( data["price"] )
-    product.short_description = data["short_description"]
+    product.currency = data["currency"]
+    product.price = int( float(data["price"]) )
     product.full_description  = data["full_description"]
-
     product.slug  = get_slug( aJSONPath )
+    try:
+        product.img_main = data['img_main']
+        product.img_card = data['img_card']
+        product.img_1 = data['img_1']
+        product.img_2 = data['img_2']
+        product.img_3 = data['img_3']
+        product.id = data['id']
+    except:
+        product.id = get_slug( aJSONPath )
 
     return product
 
@@ -79,4 +100,8 @@ def load_product_by_slug( aSlug ):
 
     aJSONPath = get_product_path( aSlug + '.json' )
 
+    return load_product( aJSONPath )
+
+def load_product_by_id( id ):
+    aJSONPath = get_product_path( id + '.json' )
     return load_product( aJSONPath )

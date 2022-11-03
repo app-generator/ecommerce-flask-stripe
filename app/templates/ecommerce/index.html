@@ -18,7 +18,20 @@
           <div class="row py-lg-7 py-5">
             <div class="col-lg-3 col-md-5 position-relative my-auto">
               <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" 
-                   src="/static/products/{{ featured_product.slug }}/card.jpg">
+                {% if featured_product.img_card %} 
+                  {% if featured_product.img_card|starts_with %}
+                    src="{{ featured_product.img_card }}"
+                  {% else %}
+                    src="data:image/png;base64,{{ featured_product.img_card }}"
+                  {% endif %} 
+                {% else %}  
+                  {% if featured_product.img_main|starts_with %}
+                    src="{{ featured_product.img_main }}"
+                  {% else %}
+                    src="data:image/png;base64,{{ featured_product.img_main }}"
+                  {% endif %}
+                {% endif %}
+                />
             </div>
             <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
               <div class="d-flex justify-content-between align-items-center mb-2">
@@ -67,10 +80,22 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain card-blog">
               <div class="card-image border-radius-lg position-relative">
-                <a href="{{ url_for('products_index') }}{{ product.slug }}">
-                  <img class="w-100 border-radius-lg move-on-hover shadow" 
-                       src="/static/products/{{ product.slug }}/card.jpg">
-                </a>
+                {% if product.img_main %}
+                  <a href="{{ url_for('product_info', path=product.slug) }}">
+                    {% if product.img_main|starts_with %}
+                    <img class="w-100 border-radius-lg move-on-hover shadow" 
+                        src="{{product.img_main}}">
+                    {% else %}
+                    <img class="w-100 border-radius-lg move-on-hover shadow" 
+                        src="data:image/png;base64,{{product.img_main}}">
+                    {% endif %}
+                  </a>
+                {% else %}
+                  <a href="{{ url_for('product_info', path=product.slug) }}">
+                    <img class="w-100 border-radius-lg move-on-hover shadow" 
+                        src="/static/products/{{ product.slug }}/card.jpg">
+                  </a>
+                {% endif %}
               </div>
               <div class="card-body px-0">
                 <h5>
