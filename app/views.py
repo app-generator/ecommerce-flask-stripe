@@ -147,9 +147,11 @@ def products_index(path):
 @app.route('/products/<path>/')
 def product_info(path):
 
-    product = load_product_by_slug( path )
-
-    return render_template( 'ecommerce/template.html', product=product )
+    try:
+        product = load_product_by_slug( path )
+        return render_template( 'ecommerce/template.html', product=product )
+    except:
+        return render_template( 'pages/page-404.html')
 
 # App main route + generic routing
 @app.route('/<path>')
