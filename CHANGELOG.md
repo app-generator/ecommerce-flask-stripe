@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2] 2022-11-04
+### Improvements
+
+- UI/UX Changes 
+- Image Management
+- Improved Error Checking
+
 ## [1.0.1] 2022-10-09
 ## Evolutions
 
