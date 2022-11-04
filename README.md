@@ -17,9 +17,9 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 | ✅ | **[Soft UI Design](https://www.creative-tim.com/product/soft-ui-design-system?AFFILIATE=128200)** | (Free Version) by `Creative-Tim` |
 | ✅ | **JSON** | `Products definition` - see [sample](./app/templates/products/product-air-zoom-pegasus.json) |
 | ✅ | Automatic Products Discovery | Source DIR: [templates\products](./app/templates/products) |
-| ❌ | **Deployment** | `Docker` & Pages Compression |
-| ❌ | **Dw Products from Stripe** | On going development via [Python Stripe Library](https://pypi.org/project/python-stripe/) |
-| ❌ | **CI/CD** | Render Deployment Platform |
+| ✅ | **Dw Products from Stripe** | On going development via [Python Stripe Library](https://pypi.org/project/python-stripe/) |
+| ✅ | **CI/CD** | Render Deployment Platform |
+| ✅ | **Deployment** | `Docker` & Pages Compression |
 
 <br />
 
