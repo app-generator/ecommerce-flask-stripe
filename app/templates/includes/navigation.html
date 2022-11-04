@@ -45,12 +45,15 @@
                           </div>
                         </div>
                         Samples
-                      </h6>
+                      </h6>                       
+
+                      {% if current_user.is_authenticated %}
+                      <a href="{{ url_for('load_product_json') }}" class="dropdown-item border-radius-md">
+                        Edit Products
+                      </a>
+                      {% endif %}
                       <a href="{{ url_for('products_index') }}" class="dropdown-item border-radius-md">
                         All Products
-                      </a>
-                      <a href="{{ url_for('products_index') }}/product-air-zoom-pegasus" class="dropdown-item border-radius-md">
-                        Nike Air Zoom
                       </a>
                     </div>
                     <div class="d-lg-none">
@@ -106,7 +109,7 @@
                         </div>
                         Account
                       </h6>
-                      <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                      <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                         Sign In
                       </a>
                     </div>
@@ -173,7 +176,7 @@
                         </div>
                         Account
                       </h6>
-                      <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                      <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                         Sign In
                       </a>
                       <a href="/page-sign-up.html" class="dropdown-item border-radius-md">
@@ -233,7 +236,7 @@
                         </div>
                         Account
                       </h6>
-                      <a href="/page-sign-in.html" class="dropdown-item border-radius-md">
+                      <a href="{{ url_for('login') }}" class="dropdown-item border-radius-md">
                         Sign In
                       </a>
                     </div>
@@ -698,14 +701,22 @@
                 </li>
 
                 <li class="nav-item ms-lg-auto">
-                  <a class="nav-link nav-link-icon me-2" href="https://github.com/app-generator/sample-flask-stripe" target="_blank">
+                  <a class="nav-link nav-link-icon me-2" href="https://github.com/app-generator/ecommerce-flask-stripe" target="_blank">
                     <i class="fa fa-download me-1"></i>
                     <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Source Code">Download</p>
                   </a>
                 </li>
-                <li class="nav-item my-auto ms-3 ms-lg-0">
-                  <a href="https://appseed.us" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
-                </li>
+
+                {% if current_user.is_authenticated %}
+                  <li class="nav-item my-auto ms-3 ms-lg-0">
+                    <a href="{{ url_for('logout') }}" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Logout</a>
+                  </li>
+                {% else %}
+                  <li class="nav-item my-auto ms-3 ms-lg-0">
+                    <a href="https://appseed.us" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
+                  </li>
+                {% endif %}
+
               </ul>
             </div>
           </div>

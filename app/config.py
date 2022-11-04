@@ -18,6 +18,6 @@ class Config(object):
     STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE_KEY', None )
     SERVER_ADDRESS         = os.getenv('SERVER_ADDRESS', 'http://localhost:5000/')
 
-    STRIPE_IS_ACTIVE       = False
+    STRIPE_IS_ACTIVE = False
     if STRIPE_SECRET_KEY and STRIPE_PUBLISHABLE_KEY:
         STRIPE_IS_ACTIVE = True
