@@ -5,7 +5,7 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 - 👉 [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
 - 👉 [Deploy Flask on Render](https://docs.appseed.us/deployment/render/flask) - `Step-by-step` tutorial
 - ✅ Compatible with [LIVE Deployer](https://appseed.us/go-live/)
-  - [Deploy Flask & Stripe with Drag & Drop](https://www.youtube.com/watch?v=iXjmWUNbTjA) - `video material`
+  - [Deploy with Drag & Drop](https://www.youtube.com/watch?v=iXjmWUNbTjA) - `video material`
 
 <br />
 
