@@ -24,7 +24,13 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 
 <br />
 
-https://user-images.githubusercontent.com/51070104/193888196-bfb20cd1-7248-4a42-ba97-6d67f14c5e40.mp4
+## ✨ `Go LIVE` via [LIVE Deployer](https://appseed.us/go-live/)
+
+> This video explains `how to deploy` the product LIVE using a `Drag & Drop` gesture.
+
+<br /> 
+
+https://user-images.githubusercontent.com/51070104/202530724-39364d09-17fe-4020-adc7-8003e2fabd49.mp4
 
 <br />
 
