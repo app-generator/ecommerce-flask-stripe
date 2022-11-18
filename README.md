@@ -2,13 +2,6 @@
 
 Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Flask**.
 
-- 👉 [Flask & Stripe Presentation](https://www.youtube.com/watch?v=JDtigUqW_MM) - published on `YouTube`
-- 👉 [Deploy Flask on Render](https://docs.appseed.us/deployment/render/flask) - `Step-by-step` tutorial
-- ✅ Compatible with [LIVE Deployer](https://appseed.us/go-live/)
-  - [Deploy with Drag & Drop](https://www.youtube.com/watch?v=iXjmWUNbTjA) - `video material`
-
-<br />
-
 > Roadmap & Features 
 
 | Status | Item | info | 
@@ -19,8 +12,15 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 | ✅ | **JSON** | `Products definition` - see [sample](./app/templates/products/product-air-zoom-pegasus.json) |
 | ✅ | Automatic Products Discovery | Source DIR: [templates\products](./app/templates/products) |
 | ✅ | **Dw Products from Stripe** | On going development via [Python Stripe Library](https://pypi.org/project/python-stripe/) |
-| ✅ | **CI/CD** | Render Deployment Platform |
-| ✅ | **Deployment** | `Docker` & Pages Compression |
+| ✅ | Go LIVE with [LIVE Deployer](https://appseed.us/go-live/) | [Video Intro](https://www.youtube.com/watch?v=iXjmWUNbTjA) |
+
+<br />
+
+## [Black Friday](https://appseed.us/discounts/) - `75%OFF`
+
+> The campaign is active until `30.NOV` and applies to all products and licenses.
+
+[![AppSeed - Black Friday 2022 Campaign, 75% OFF Discount (all products).](https://user-images.githubusercontent.com/51070104/201829599-9fe6bdd7-3f19-46f3-9115-962eeb13bf29.jpg)](https://appseed.us/discounts/)
 
 <br />
 
