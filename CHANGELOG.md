@@ -1,25 +1,30 @@
 # Change Log
 
+## [1.0.5] 2024-01-03
+### Changes
+
+- DOCS Update (readme)
+
 ## [1.0.4] 2022-11-17
-### Improvements
+### Changes
 
 - Compatible with [LIVE Deployer](https://appseed.us/go-live/)
   - [Deploy Flask & Stripe with Drag & Drop](https://www.youtube.com/watch?v=iXjmWUNbTjA) - `video material`
 
 ## [1.0.3] 2022-11-04
-### Improvements
+### Changes
 
 - Links Update (minor)
 
 ## [1.0.2] 2022-11-04
-### Improvements
+### Changes
 
 - UI/UX Changes 
 - Image Management
 - Improved Error Checking
 
 ## [1.0.1] 2022-10-09
-## Evolutions
+## Changes
 
 - Added Build Script for Render
   - CI/CD flow
