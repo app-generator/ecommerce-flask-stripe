@@ -1,8 +1,16 @@
 # [Flask & Stripe](https://blog.appseed.us/flask-stripe-open-source-mini-ecommerce/) `Mini eCommerce`
 
-Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Flask**.
+Open-source mini `eCommerce` project that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Flask & Stripe**.
 
-> Roadmap & Features 
+> 👉 **For more starters and support** access [AppSeed](https://appseed.us/) 
+
+<br />
+
+![Flask & Stripe Mini eCommerce - Open-Source Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/196479738-be20d203-df44-47ce-a124-d3ed426ef622.jpg)
+
+<br />
+
+## Features 
 
 | Status | Item | info | 
 | --- | --- | --- |
@@ -12,21 +20,12 @@ Open-source mini `eCommerce` project that loads the products from `JSON` files s
 | ✅ | **JSON** | `Products definition` - see [sample](./app/templates/products/product-air-zoom-pegasus.json) |
 | ✅ | Automatic Products Discovery | Source DIR: [templates\products](./app/templates/products) |
 | ✅ | **Dw Products from Stripe** | On going development via [Python Stripe Library](https://pypi.org/project/python-stripe/) |
-| ✅ | Go LIVE with [LIVE Deployer](https://appseed.us/go-live/) | [Video Intro](https://www.youtube.com/watch?v=iXjmWUNbTjA) |
+
+
 
 <br />
 
-## ✨ Video Presentation
-
-> This video explains `how to deploy` the product LIVE using a `Drag & Drop` gesture.
-
-<br /> 
-
-https://user-images.githubusercontent.com/51070104/202530724-39364d09-17fe-4020-adc7-8003e2fabd49.mp4
-
-<br />
-
-## ✨ Start the app in `Docker`
+## Start in `Docker`
 
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`) 
 
@@ -57,7 +56,7 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 <br />
 
-## ✨ Quick Start
+## Manual Build
 
 > 👉 Rename `env.sample` to `.env`
 
@@ -93,7 +92,7 @@ $ flask run
 
 <br />
 
-## ✨ Create a new Product
+## Create a new Product
 
 - Go to `app/templates/products` directory
 - Create a new `JSON` file with data:
@@ -123,7 +122,7 @@ $ flask run
 
 <br />
 
-## ✨ Codebase structure
+## Codebase Structure
 
 The project has a simple structure, represented as bellow:
 
@@ -159,7 +158,7 @@ The project has a simple structure, represented as bellow:
 
 <br />
 
-## ✨ Credits & Links
+## Credits & Links
 
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - The official website
 - [Stripe Dev Tools](https://stripe.com/docs/development) - official docs
