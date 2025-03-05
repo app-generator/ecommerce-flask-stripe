@@ -8,7 +8,7 @@
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                          | [Rocket eCommerce](https://appseed.us/product/rocket-ecommerce/django/) | [Custom Development](https://appseed.us/custom-development/) |  
+| Free Version                          | [Rocket eCommerce](https://app-generator.dev/product/rocket-ecommerce/django/) | [Custom Development](https://appseed.us/custom-development/) |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Stack: **Flask**, `Bootstrap`      | ✅ Stack: **Django**, `TailwindCSS`              | **Everything in PRO**, plus:         |
 | ✓ Payments: **Stripe**                | ✅ Payments: **Stripe**                          | ✅ **1mo Custom Development**       | 
@@ -23,7 +23,7 @@
 | -                                     | ✅ **FIGMA** Project                             |  -                                   |
 | -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) |  -                |
 | ------------------------------------  | ------------------------------------              | ------------------------------------|
-| -                                     | 🚀 [LIVE Demo](https://rocket-ecommerce.onrender.com/) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |  
+| -                                     | 🚀 [LIVE Demo](https://app-generator.dev/product/rocket-ecommerce/django/) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |  
 
 <br />
 
